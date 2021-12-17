@@ -1,0 +1,2 @@
+"use strict";function Time(){var e=new Date,t=e.getHours(),n=e.getMinutes(),u=e.getSeconds(),i="";i=t>=12?"PM":"AM",0==t?t=12:t>12&&(t-=12),t=update(t),n=update(n),u=update(u),document.getElementById("clock").innerText=t+" : "+n+" : "+u+" "+i,setTimeout(Time,1e3)}function update(e){return e<10?"0"+e:e}Time();
+//# sourceMappingURL=time.js.map
